@@ -1,0 +1,50 @@
+﻿.diamond{
+    background: #FFF;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    margin: auto;
+}
+    .diamond>img {
+        transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        margin-top: -26%;
+        margin-left: -40%;
+        width: 160%;
+        height: 160%;
+    }
+.relative{
+    position:relative;
+}
+.diamond h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #f7505a;
+    letter-spacing: 0.2em;
+    margin-top: 60px;
+}
+.line{
+    height:100px;
+}
+.cul{
+    float:left;
+    text-align:center;
+    width:100%;
+}
+    .cul > h2 {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #333399;
+        letter-spacing: 0.2em;
+        margin-top: 83px;      
+        border-width: 1px;
+    }
+hr {
+    width: 60%
+}

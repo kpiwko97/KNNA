@@ -1,0 +1,102 @@
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #C0C0C0;
+    border-style: solid none;  
+    margin: 2% 0;
+    width: 80%;
+}
+h2 {
+    font-size: 3vw;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    color: #313b48;
+    margin-bottom: 3%;
+    font-weight: 400;
+}
+h6 {
+    margin-top: 2%;
+    font-size: 4vw;
+    color: #313b48;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.opis {
+    width: 100%;
+    text-align: center;
+}
+.opis p {
+        color: dimgray;
+        position: relative;
+        font-size: 1.3vw;
+        text-align: justify;
+        text-align-last: center;
+        text-justify: inter-word;
+}
+#short {
+    width: 60%;
+    margin: 3% 0;
+}
+@media (max-width: 1000px) {
+    hr {
+        width: 90% !important;
+    }
+    h6 {
+        font-size: 9vw;
+    }
+    .opis p {
+        font-size: 2.8vw !important;
+        margin: 5%;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+    .price .header {
+        font-size: 2.9vw!important;
+    }
+    .price .grey {
+        font-size: 2.2vw!important;
+    }
+    .price .VCprezes {
+        font-size: 2vw !important;
+    }
+    .thBlack {
+        font-size: 4vw!important;
+    }
+    .thGrey {
+        font-size: 3.5vw !important; 
+    }
+    .thWhite {
+        font-size: 3vw !important;
+    }
+}
+.holeTable {
+    border-collapse: collapse;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.holeTable:hover { box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2) }
+.thBlack {
+    color: white;
+    padding: 5%;
+    font-size: 2.2vw;
+    font-weight: 400
+}
+.thGrey {
+    font-size: 1.7vw;
+    padding: 4%;
+    font-weight: 500
+}
+.thWhite {
+    font-size: 1.4vw;
+    padding: 6%;
+    font-weight: 300
+}
+
+

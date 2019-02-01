@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projekty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script rel="stylesheet" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script rel="stylesheet" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="css/DisplayProjects-min.css"  type="text/css" rel="stylesheet" />
+</head>
+<body>
+    
+<div class="loader hidden">  
+        <img src="images/gear.png" class="spin">
+        <text style="font-size:3vw">Loading...</text>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" background:#ffffff!important;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Index.pl-PL.html">Strona Główna<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Działalność
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="History.html">Historia</a>
+                        <a class="dropdown-item" href="Profile.html">Profil</a>
+                        <a class="dropdown-item"  href="Interests.html">Zainteresowania</a>
+                        <a class="dropdown-item"  href="Graduates.html">Absolwenci</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="GetAllProjects.html">Projekty</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Nasze aktywności</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"  href="Symposia.html">Sympozja</a>
+                        <a class="dropdown-item"  href="Conferences.html">Konferencje</a>
+                        <a class="dropdown-item"  href="Training.html">Szkolenia</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Sponsors.html">Partnerzy przemysłu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="UsefulLinks.html">Przydatne linki</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Kontakt</a>
+                </li>
+                <li class="language nav-item nav-link">
+                    <div title="Zmień język">
+                        <form id="selectLanguage" method="post" role="form">
+                    
+                            <button type="submit" name="culture" value="pl-PL" style="border: 0; background: transparent">
+                                <img src="images/FlagPL.png" width="30" height="20" alt="polski" />
+                            </button>
+                    
+                            <button type="submit" name="culture" value="en-US" style="border: 0; background: transparent">
+                                <img src="images/FlagEn.png" width="30" height="20" alt="angielski" />
+                            </button>
+                    
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </nav>
+<div align="center">
+    <div class="header">
+        <h6>Projekty</h6>
+        <hr/>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-md-center" style="margin-bottom: 5%">
+        <div class="col-md-4 col-12 ">
+            <div style="background: lightblue" class="tile backeffect">
+                <a href="#">
+                    <label class="label1">Projekty Techniczne</label>
+                </a>
+            </div>
+        </div>
+            <div class="col-md-4 col-12">
+                <a asp-action="GetProject" asp-route-id="@m.Id">
+                    <div class="tile backeffect">
+                        <label class="label1">Tutaj Logika wyjmowania z bazy</label>
+                    </div>
+                </a>
+            </div>
+        
+    </div>
+</div>
+<div class="row" style="background:black;color:white;clear:both;padding:20px;bottom:0px;position:static;">
+        <div class="col-sm-4">
+            <h3>Koło Naukowe Napęd Automatyka</h3>
+        </div>
+        <div class="col-sm-4">Politechnika Lubleska - Wydział Elektrotechniki i Informatyki 20-618 Lublin, ul. Nadbystrzycka 38A
+        </div>
+        <div class="col-sm-4">Kontakt z nami: tel: (+48) 81 53 81 341 tel, fax.: (+48) 81 53 81 342
+            mail:<a href="mailto:knna@pollub.pl" style="color:white;text-decoration:none;">knna@pollub.pl</a>
+        </div>
+    </div>
+    
+    <script>
+    
+            window.addEventListener("load", function () {
+                const loader = document.querySelector(".loader");
+                loader.className += " hidden";
+            });
+    </script>
+</body>
+</html>

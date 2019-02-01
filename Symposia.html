@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Symozja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link type="text/css" href="css/Symposia.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Gudea&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div class="loader hidden">  
+                <img src="images/gear.png" class="spin">
+                <text style="font-size:3vw">Loading...</text>
+            </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" background:#ffffff!important;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Index.pl-PL.html">Strona Główna<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Działalność
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="History.html">Historia</a>
+                        <a class="dropdown-item" href="Profile.html">Profil</a>
+                        <a class="dropdown-item"  href="Interests.html">Zainteresowania</a>
+                        <a class="dropdown-item"  href="Graduates.html">Absolwenci</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="GetAllProjects.html">Projekty</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Nasze aktywności</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"  href="Symposia.html">Sympozja</a>
+                        <a class="dropdown-item"  href="Conferences.html">Konferencje</a>
+                        <a class="dropdown-item"  href="Training.html">Szkolenia</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Sponsors.html">Partnerzy przemysłu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="UsefulLinks.html">Przydatne linki</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Kontakt</a>
+                </li>
+                <li class="language nav-item nav-link">
+                    <div title="Zmień język">
+                        <form id="selectLanguage" method="post" role="form">
+                    
+                            <button type="submit" name="culture" value="pl-PL" style="border: 0; background: transparent">
+                                <img src="images/FlagPL.png" width="30" height="20" alt="polski" />
+                            </button>
+                    
+                            <button type="submit" name="culture" value="en-US" style="border: 0; background: transparent">
+                                <img src="images/FlagEn.png" width="30" height="20" alt="angielski" />
+                            </button>
+                    
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        
+<div class="row justify-content-center" style="margin: 6% 0">
+    <div id="carouselExampleIndicators" class="carousel slide col-lg-6 align-self-center" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/sumpozjumVI.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <p><a href="https://photos.google.com/share/AF1QipMiATnCVFNprvt7xMVu8bpImavZle-aQxMOyC9mo_AtA8N2EBhxaKZnvrQ0YiQgwg?key=Q211Y2hMZjkxMEdlTVozbTB6ZGZCcEp4MGFpX2Vn" target="_blank"> VI Sympozjum Naukowe Elektryków i Informatyków</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/sumpozjumVI1.JPG" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <p><a href="https://photos.google.com/share/AF1QipMiATnCVFNprvt7xMVu8bpImavZle-aQxMOyC9mo_AtA8N2EBhxaKZnvrQ0YiQgwg?key=Q211Y2hMZjkxMEdlTVozbTB6ZGZCcEp4MGFpX2Vn" target="_blank"> VI Sympozjum Naukowe Elektryków i Informatyków 2016</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/SNEiI_20171.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <p><a target="_blank" href="https://photos.app.goo.gl/OSMVKSLGX46bQrWr2">VII Sympozjum Naukowe Elektryków i Informatyków 2017</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/SNEiI_20172.jpg" alt="Fourth slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <p><a target="_blank" href="https://photos.app.goo.gl/OSMVKSLGX46bQrWr2">VII Sympozjum Naukowe Elektryków i Informatyków 2017</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/SNEII20181 (1).jpg?1" alt="Fifth slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <p><a href="http://sneii2018.pollub.pl/" target="_blank">VII Sympozjum Naukowe Elektryków i Informatyków 2018</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/SNEII20181 (2).jpg?1" alt="Fifth slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <p><a href="http://sneii2018.pollub.pl/" target="_blank">VII Sympozjum Naukowe Elektryków i Informatyków 2018</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/Kleszczowie.jpg" alt="Fifth slide" style="width:102.4%!important;">
+                <div class="carousel-caption d-none d-md-block">
+                    <p><a href="http://sneii2018.pollub.pl/" target="_blank">VII Sympozjum Naukowe Elektryków i Informatyków 2018</a></p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="co col-lg-5" style="float: left;margin-left:2%;flex:unset;">
+        <div class="header" style="text-align: center; ">
+            <h1>Aktualności</h1>
+        </div>
+
+        //Logika wyciagania aktualnosci z bazy
+    </div>
+</div>
+<div class="row" style="background:black;color:white;clear:both;padding:20px;bottom:0px;position:static;">
+        <div class="col-sm-4">
+            <h3>Koło Naukowe Napęd Automatyka</h3>
+        </div>
+        <div class="col-sm-4">Politechnika Lubleska - Wydział Elektrotechniki i Informatyki 20-618 Lublin, ul. Nadbystrzycka 38A
+        </div>
+        <div class="col-sm-4">Kontakt z nami: tel: (+48) 81 53 81 341 tel, fax.: (+48) 81 53 81 342
+            mail:<a href="mailto:knna@pollub.pl" style="color:white;text-decoration:none;">knna@pollub.pl</a>
+        </div>
+    </div>
+    
+    <script>
+    
+            window.addEventListener("load", function () {
+                const loader = document.querySelector(".loader");
+                loader.className += " hidden";
+            });
+    </script>
+    
+<script>
+    $('.carousel').carousel({
+        interval: 2000
+    })
+</script>
+</body>
+</html>
