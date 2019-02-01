@@ -1,0 +1,30 @@
+﻿.header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+#carouselExampleIndicators {
+   
+    margin-left:2%;
+}
+
+.carousel-caption {
+    background:rgba(63,63,63,0.6);
+}
+.carousel-item a {
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+}
+.carousel-caption {
+   
+    right: 0%; 
+    bottom: 20px;
+    left: 0%; ;
+   
+}
+@media only screen and (max-width: 600px) {
+   .co{
+       width:100%!important;
+   }
+}

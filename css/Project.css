@@ -1,0 +1,22 @@
+﻿#content img {
+    width: 70%;
+}
+p {
+    color: dimgray;
+    position: relative;
+    font-size: 2vw;
+    text-align: justify;
+    text-align-last: center;
+    text-justify: inter-word;
+}
+.img-main {
+    box-shadow: 0 5px 30px #404040;
+    -moz-box-shadow: 0 5px 30px #404040;
+    -webkit-box-shadow: 0 5px 30px #404040;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 50%;
+}
+.img-multi {
+    margin: 2.5%;
+}
