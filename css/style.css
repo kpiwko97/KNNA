@@ -1,7 +1,10 @@
 ﻿#container {
     padding: 20px;
 }
-
+.container{
+    height:100%;
+    position:relative;
+}
 .nav-link {
     color: black !important;
     padding-left: 20px !important;
@@ -18,7 +21,11 @@
     height: 360px;
 }
 
-   
+@media screen and (max-width: 768px) {
+    .footer {
+      position: static!important;
+    }
+  }
 
 .top-logo .background {
     float: left;
